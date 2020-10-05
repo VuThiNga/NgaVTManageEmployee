@@ -8,7 +8,6 @@ target 'NgaVTQLNV' do
   # Pods for NgaVTQLNV
   pod 'Moya' # Networking
   pod 'ObjectMapper', '~> 3.5'
-  pod 'STPopup', '~> 1.8.7'
 
   target 'NgaVTQLNVTests' do
     inherit! :search_paths
