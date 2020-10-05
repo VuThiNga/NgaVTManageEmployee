@@ -3,18 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A681F70E8DD7AAD8004F582 /* Pods_NgaVTQLNVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5C170483BF14BD305C688A /* Pods_NgaVTQLNVTests.framework */; };
+		2FBACCE0EBF048870A47719C /* Pods_NgaVTQLNV_NgaVTQLNVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1ABE91BD75005C86507F33 /* Pods_NgaVTQLNV_NgaVTQLNVUITests.framework */; };
 		840B36B9252A213C0041A92D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36B8252A213C0041A92D /* AppDelegate.swift */; };
-		840B36BB252A213C0041A92D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36BA252A213C0041A92D /* SceneDelegate.swift */; };
 		840B36BD252A213C0041A92D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36BC252A213C0041A92D /* ViewController.swift */; };
 		840B36C0252A213C0041A92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B36BE252A213C0041A92D /* Main.storyboard */; };
 		840B36C2252A213E0041A92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B36C1252A213E0041A92D /* Assets.xcassets */; };
 		840B36C5252A213E0041A92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B36C3252A213E0041A92D /* LaunchScreen.storyboard */; };
 		840B36D0252A213E0041A92D /* NgaVTQLNVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36CF252A213E0041A92D /* NgaVTQLNVTests.swift */; };
 		840B36DB252A213E0041A92D /* NgaVTQLNVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36DA252A213E0041A92D /* NgaVTQLNVUITests.swift */; };
+		840B36EB252A25350041A92D /* StaffInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36E9252A25350041A92D /* StaffInfoCell.swift */; };
+		840B36EC252A25350041A92D /* StaffInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840B36EA252A25350041A92D /* StaffInfoCell.xib */; };
+		840B36EE252A2E0C0041A92D /* StaffInfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36ED252A2E0C0041A92D /* StaffInfoDetailVC.swift */; };
+		840B36F0252A2EC80041A92D /* StaffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B36EF252A2EC80041A92D /* StaffModel.swift */; };
+		84802237252AC32900205492 /* EmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84802236252AC32900205492 /* EmployeeService.swift */; };
+		84802239252AC3F600205492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84802238252AC3F600205492 /* Constants.swift */; };
+		8480223B252AC55000205492 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480223A252AC55000205492 /* BaseModel.swift */; };
+		8480223D252AC5D500205492 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480223C252AC5D500205492 /* NetworkManager.swift */; };
+		8480223F252AC7C200205492 /* EmployeeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8480223E252AC7C200205492 /* EmployeeVM.swift */; };
+		D7F4DB16C39F3061C7EC5204 /* Pods_NgaVTQLNV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B574FD01DB8DD6CA0A2EB38 /* Pods_NgaVTQLNV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B574FD01DB8DD6CA0A2EB38 /* Pods_NgaVTQLNV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NgaVTQLNV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CEAFC382B20A661529476DC /* Pods-NgaVTQLNVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNVTests.debug.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNVTests/Pods-NgaVTQLNVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D5C170483BF14BD305C688A /* Pods_NgaVTQLNVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NgaVTQLNVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CA8A28BFC1EC0BF73BA52D /* Pods-NgaVTQLNV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNV.debug.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNV/Pods-NgaVTQLNV.debug.xcconfig"; sourceTree = "<group>"; };
+		5FF75D9BC6BCD4AEC615029E /* Pods-NgaVTQLNVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNVTests.release.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNVTests/Pods-NgaVTQLNVTests.release.xcconfig"; sourceTree = "<group>"; };
+		6ABE854C669A236FFE4F2552 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNV-NgaVTQLNVUITests.debug.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNV-NgaVTQLNVUITests/Pods-NgaVTQLNV-NgaVTQLNVUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		840B36B5252A213C0041A92D /* NgaVTQLNV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NgaVTQLNV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B36B8252A213C0041A92D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840B36BA252A213C0041A92D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		840B36BC252A213C0041A92D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840B36BF252A213C0041A92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840B36C1252A213E0041A92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +65,18 @@
 		840B36D6252A213E0041A92D /* NgaVTQLNVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NgaVTQLNVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B36DA252A213E0041A92D /* NgaVTQLNVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NgaVTQLNVUITests.swift; sourceTree = "<group>"; };
 		840B36DC252A213E0041A92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840B36E9252A25350041A92D /* StaffInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffInfoCell.swift; sourceTree = "<group>"; };
+		840B36EA252A25350041A92D /* StaffInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffInfoCell.xib; sourceTree = "<group>"; };
+		840B36ED252A2E0C0041A92D /* StaffInfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffInfoDetailVC.swift; sourceTree = "<group>"; };
+		840B36EF252A2EC80041A92D /* StaffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffModel.swift; sourceTree = "<group>"; };
+		84802236252AC32900205492 /* EmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeService.swift; sourceTree = "<group>"; };
+		84802238252AC3F600205492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8480223A252AC55000205492 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		8480223C252AC5D500205492 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8480223E252AC7C200205492 /* EmployeeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeVM.swift; sourceTree = "<group>"; };
+		899165EE32CC69C5E2096488 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNV-NgaVTQLNVUITests.release.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNV-NgaVTQLNVUITests/Pods-NgaVTQLNV-NgaVTQLNVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B1ABE91BD75005C86507F33 /* Pods_NgaVTQLNV_NgaVTQLNVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NgaVTQLNV_NgaVTQLNVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5344104260E92CA57B73FA2 /* Pods-NgaVTQLNV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NgaVTQLNV.release.xcconfig"; path = "Target Support Files/Pods-NgaVTQLNV/Pods-NgaVTQLNV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F4DB16C39F3061C7EC5204 /* Pods_NgaVTQLNV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A681F70E8DD7AAD8004F582 /* Pods_NgaVTQLNVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBACCE0EBF048870A47719C /* Pods_NgaVTQLNV_NgaVTQLNVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AE1D72B3D7BFD8E0605EF07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B574FD01DB8DD6CA0A2EB38 /* Pods_NgaVTQLNV.framework */,
+				8B1ABE91BD75005C86507F33 /* Pods_NgaVTQLNV_NgaVTQLNVUITests.framework */,
+				4D5C170483BF14BD305C688A /* Pods_NgaVTQLNVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74C2DB920735E0A84F2B8A11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58CA8A28BFC1EC0BF73BA52D /* Pods-NgaVTQLNV.debug.xcconfig */,
+				F5344104260E92CA57B73FA2 /* Pods-NgaVTQLNV.release.xcconfig */,
+				6ABE854C669A236FFE4F2552 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.debug.xcconfig */,
+				899165EE32CC69C5E2096488 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.release.xcconfig */,
+				3CEAFC382B20A661529476DC /* Pods-NgaVTQLNVTests.debug.xcconfig */,
+				5FF75D9BC6BCD4AEC615029E /* Pods-NgaVTQLNVTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		840B36AC252A213C0041A92D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +137,8 @@
 				840B36CE252A213E0041A92D /* NgaVTQLNVTests */,
 				840B36D9252A213E0041A92D /* NgaVTQLNVUITests */,
 				840B36B6252A213C0041A92D /* Products */,
+				74C2DB920735E0A84F2B8A11 /* Pods */,
+				6AE1D72B3D7BFD8E0605EF07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +155,20 @@
 		840B36B7252A213C0041A92D /* NgaVTQLNV */ = {
 			isa = PBXGroup;
 			children = (
+				840B36E8252A250C0041A92D /* Cell */,
 				840B36B8252A213C0041A92D /* AppDelegate.swift */,
-				840B36BA252A213C0041A92D /* SceneDelegate.swift */,
 				840B36BC252A213C0041A92D /* ViewController.swift */,
 				840B36BE252A213C0041A92D /* Main.storyboard */,
 				840B36C1252A213E0041A92D /* Assets.xcassets */,
 				840B36C3252A213E0041A92D /* LaunchScreen.storyboard */,
 				840B36C6252A213E0041A92D /* Info.plist */,
+				840B36ED252A2E0C0041A92D /* StaffInfoDetailVC.swift */,
+				840B36EF252A2EC80041A92D /* StaffModel.swift */,
+				84802236252AC32900205492 /* EmployeeService.swift */,
+				84802238252AC3F600205492 /* Constants.swift */,
+				8480223A252AC55000205492 /* BaseModel.swift */,
+				8480223C252AC5D500205492 /* NetworkManager.swift */,
+				8480223E252AC7C200205492 /* EmployeeVM.swift */,
 			);
 			path = NgaVTQLNV;
 			sourceTree = "<group>";
@@ -128,6 +191,15 @@
 			path = NgaVTQLNVUITests;
 			sourceTree = "<group>";
 		};
+		840B36E8252A250C0041A92D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				840B36E9252A25350041A92D /* StaffInfoCell.swift */,
+				840B36EA252A25350041A92D /* StaffInfoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840B36DF252A213E0041A92D /* Build configuration list for PBXNativeTarget "NgaVTQLNV" */;
 			buildPhases = (
+				B570A14DA0B49986BF7FE198 /* [CP] Check Pods Manifest.lock */,
 				840B36B1252A213C0041A92D /* Sources */,
 				840B36B2252A213C0041A92D /* Frameworks */,
 				840B36B3252A213C0041A92D /* Resources */,
+				685D4102527BCD1C57CD95B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840B36E2252A213E0041A92D /* Build configuration list for PBXNativeTarget "NgaVTQLNVTests" */;
 			buildPhases = (
+				843DA5A7762DA454A0B0FCC5 /* [CP] Check Pods Manifest.lock */,
 				840B36C7252A213E0041A92D /* Sources */,
 				840B36C8252A213E0041A92D /* Frameworks */,
 				840B36C9252A213E0041A92D /* Resources */,
@@ -170,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840B36E5252A213E0041A92D /* Build configuration list for PBXNativeTarget "NgaVTQLNVUITests" */;
 			buildPhases = (
+				F894758EA319B6780443704C /* [CP] Check Pods Manifest.lock */,
 				840B36D2252A213E0041A92D /* Sources */,
 				840B36D3252A213E0041A92D /* Frameworks */,
 				840B36D4252A213E0041A92D /* Resources */,
+				1B36A831895AB57F5C91E6D3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +311,7 @@
 			files = (
 				840B36C5252A213E0041A92D /* LaunchScreen.storyboard in Resources */,
 				840B36C2252A213E0041A92D /* Assets.xcassets in Resources */,
+				840B36EC252A25350041A92D /* StaffInfoCell.xib in Resources */,
 				840B36C0252A213C0041A92D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +332,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B36A831895AB57F5C91E6D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV-NgaVTQLNVUITests/Pods-NgaVTQLNV-NgaVTQLNVUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV-NgaVTQLNVUITests/Pods-NgaVTQLNV-NgaVTQLNVUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV-NgaVTQLNVUITests/Pods-NgaVTQLNV-NgaVTQLNVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		685D4102527BCD1C57CD95B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV/Pods-NgaVTQLNV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV/Pods-NgaVTQLNV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NgaVTQLNV/Pods-NgaVTQLNV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843DA5A7762DA454A0B0FCC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NgaVTQLNVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B570A14DA0B49986BF7FE198 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NgaVTQLNV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F894758EA319B6780443704C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NgaVTQLNV-NgaVTQLNVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		840B36B1252A213C0041A92D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8480223F252AC7C200205492 /* EmployeeVM.swift in Sources */,
+				8480223B252AC55000205492 /* BaseModel.swift in Sources */,
+				840B36F0252A2EC80041A92D /* StaffModel.swift in Sources */,
+				8480223D252AC5D500205492 /* NetworkManager.swift in Sources */,
+				840B36EE252A2E0C0041A92D /* StaffInfoDetailVC.swift in Sources */,
+				84802237252AC32900205492 /* EmployeeService.swift in Sources */,
 				840B36BD252A213C0041A92D /* ViewController.swift in Sources */,
 				840B36B9252A213C0041A92D /* AppDelegate.swift in Sources */,
-				840B36BB252A213C0041A92D /* SceneDelegate.swift in Sources */,
+				840B36EB252A25350041A92D /* StaffInfoCell.swift in Sources */,
+				84802239252AC3F600205492 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +620,13 @@
 		};
 		840B36E0252A213E0041A92D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CA8A28BFC1EC0BF73BA52D /* Pods-NgaVTQLNV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB6AYSJ265;
 				INFOPLIST_FILE = NgaVTQLNV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +640,13 @@
 		};
 		840B36E1252A213E0041A92D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5344104260E92CA57B73FA2 /* Pods-NgaVTQLNV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YB6AYSJ265;
 				INFOPLIST_FILE = NgaVTQLNV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +660,7 @@
 		};
 		840B36E3252A213E0041A92D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEAFC382B20A661529476DC /* Pods-NgaVTQLNVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +683,7 @@
 		};
 		840B36E4252A213E0041A92D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF75D9BC6BCD4AEC615029E /* Pods-NgaVTQLNVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +706,7 @@
 		};
 		840B36E6252A213E0041A92D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABE854C669A236FFE4F2552 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +727,7 @@
 		};
 		840B36E7252A213E0041A92D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 899165EE32CC69C5E2096488 /* Pods-NgaVTQLNV-NgaVTQLNVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

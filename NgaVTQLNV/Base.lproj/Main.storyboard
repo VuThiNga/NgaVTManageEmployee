@@ -1,24 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ii6-sz-5xg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Danh sách nhân viên-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Danh sách nhân viên" id="BYZ-38-t0r" customClass="ViewController" customModule="NgaVTQLNV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qf2-70-Fum">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="ATh-ul-AVF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Km5-5T-jeQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qf2-70-Fum" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MAT-Cx-wNh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qf2-70-Fum" secondAttribute="bottom" id="MoL-6h-aHY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qf2-70-Fum" secondAttribute="trailing" id="TrD-5i-id9"/>
+                            <constraint firstItem="qf2-70-Fum" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZNQ-b4-AIg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Danh sách nhân viên" id="Ok5-MF-e9G"/>
+                    <connections>
+                        <outlet property="tbvStaff" destination="qf2-70-Fum" id="BjV-8P-3r9"/>
+                        <segue destination="3bJ-Cl-AlM" kind="show" identifier="showStaffInfoDetail" id="wua-Ji-quY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--Sửa đổi thông tin-->
+        <scene sceneID="D3z-hu-DT3">
+            <objects>
+                <viewController title="Sửa đổi thông tin" id="3bJ-Cl-AlM" customClass="StaffInfoDetailVC" customModule="NgaVTQLNV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qDX-QT-pWa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8T-rG-gdo">
+                                <rect key="frame" x="15" y="108" width="384" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên nhân viên" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IZY-0n-CSC">
+                                <rect key="frame" x="15" y="136" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Địa chỉ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FZp-7e-8Df">
+                                <rect key="frame" x="15" y="218" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Địa chỉ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHK-iw-MdP">
+                                <rect key="frame" x="15" y="190" width="384" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giới tính là Nam" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzc-px-cwb">
+                                <rect key="frame" x="15" y="287" width="120.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QZX-WA-wVd">
+                                <rect key="frame" x="345" y="282" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azB-vk-TYJ">
+                                <rect key="frame" x="69" y="807" width="276" height="35"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.4039215686" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1wC-zC-JsC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="Sửa đổi">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="editAct:" destination="3bJ-Cl-AlM" eventType="touchUpInside" id="NOw-ZO-cuG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qui-In-erX" firstAttribute="trailing" secondItem="N8T-rG-gdo" secondAttribute="trailing" constant="15" id="2cv-N3-QtT"/>
+                            <constraint firstItem="N8T-rG-gdo" firstAttribute="leading" secondItem="Qui-In-erX" secondAttribute="leading" constant="15" id="51R-Mc-5YM"/>
+                            <constraint firstItem="azB-vk-TYJ" firstAttribute="width" secondItem="qDX-QT-pWa" secondAttribute="width" multiplier="2:3" id="5mE-jL-dfh"/>
+                            <constraint firstItem="FZp-7e-8Df" firstAttribute="leading" secondItem="fHK-iw-MdP" secondAttribute="leading" id="9ai-55-C5u"/>
+                            <constraint firstItem="fHK-iw-MdP" firstAttribute="trailing" secondItem="N8T-rG-gdo" secondAttribute="trailing" id="CeR-ju-WHj"/>
+                            <constraint firstItem="Qui-In-erX" firstAttribute="trailing" secondItem="QZX-WA-wVd" secondAttribute="trailing" constant="20" id="EgA-8A-T5C"/>
+                            <constraint firstItem="N8T-rG-gdo" firstAttribute="top" secondItem="Qui-In-erX" secondAttribute="top" constant="20" id="HPC-tR-42v"/>
+                            <constraint firstItem="fHK-iw-MdP" firstAttribute="top" secondItem="IZY-0n-CSC" secondAttribute="bottom" constant="20" id="MOV-gR-sFE"/>
+                            <constraint firstItem="azB-vk-TYJ" firstAttribute="centerX" secondItem="Qui-In-erX" secondAttribute="centerX" id="MTK-pT-tRp"/>
+                            <constraint firstItem="fHK-iw-MdP" firstAttribute="leading" secondItem="N8T-rG-gdo" secondAttribute="leading" id="QE0-su-lbk"/>
+                            <constraint firstItem="N8T-rG-gdo" firstAttribute="top" secondItem="Qui-In-erX" secondAttribute="top" constant="20" id="Qwr-ft-xnH"/>
+                            <constraint firstItem="IZY-0n-CSC" firstAttribute="trailing" secondItem="N8T-rG-gdo" secondAttribute="trailing" id="W6h-oX-M4c"/>
+                            <constraint firstItem="IZY-0n-CSC" firstAttribute="leading" secondItem="N8T-rG-gdo" secondAttribute="leading" id="Z9h-GD-lCP"/>
+                            <constraint firstItem="QZX-WA-wVd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Tzc-px-cwb" secondAttribute="trailing" constant="20" id="ZEY-6h-YHa"/>
+                            <constraint firstItem="FZp-7e-8Df" firstAttribute="top" secondItem="fHK-iw-MdP" secondAttribute="bottom" constant="10" id="ZpX-MI-md4"/>
+                            <constraint firstItem="Qui-In-erX" firstAttribute="bottom" secondItem="azB-vk-TYJ" secondAttribute="bottom" constant="20" id="aoO-OJ-fdP"/>
+                            <constraint firstItem="QZX-WA-wVd" firstAttribute="centerY" secondItem="Tzc-px-cwb" secondAttribute="centerY" id="bC8-IX-x9Q"/>
+                            <constraint firstItem="FZp-7e-8Df" firstAttribute="trailing" secondItem="fHK-iw-MdP" secondAttribute="trailing" id="bP9-6q-mbb"/>
+                            <constraint firstItem="IZY-0n-CSC" firstAttribute="top" secondItem="N8T-rG-gdo" secondAttribute="bottom" constant="10" id="bgA-5v-4nm"/>
+                            <constraint firstItem="Tzc-px-cwb" firstAttribute="top" secondItem="FZp-7e-8Df" secondAttribute="bottom" constant="35" id="cNc-xF-t1X"/>
+                            <constraint firstItem="Tzc-px-cwb" firstAttribute="leading" secondItem="N8T-rG-gdo" secondAttribute="leading" id="eoD-Hw-Fyh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qui-In-erX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sửa đổi thông tin" id="HBR-hA-azG"/>
+                    <connections>
+                        <outlet property="lbStaffAddress" destination="FZp-7e-8Df" id="52U-Gf-mhy"/>
+                        <outlet property="lbStaffName" destination="IZY-0n-CSC" id="KAQ-ho-SCW"/>
+                        <outlet property="switchGender" destination="QZX-WA-wVd" id="wgu-w4-TNq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPk-sW-JWd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2010" y="121"/>
+        </scene>
+        <!--Danh sách nhân viên-->
+        <scene sceneID="oxR-Xr-XpB">
+            <objects>
+                <navigationController title="Danh sách nhân viên" automaticallyAdjustsScrollViewInsets="NO" id="Ii6-sz-5xg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vpj-pg-2Gs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QGf-ZL-gAu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhZ-jt-Rq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>

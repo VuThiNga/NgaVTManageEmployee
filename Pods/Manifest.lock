@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (3.5.3)
+  - STPopup (1.8.7)
+
+DEPENDENCIES:
+  - Moya
+  - ObjectMapper (~> 3.5)
+  - STPopup (~> 1.8.7)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - ObjectMapper
+    - STPopup
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  STPopup: a9045557bc48a0df51fbb7bf0544447c5fe84d34
+
+PODFILE CHECKSUM: aee14a5525078196e80f3827ba350d0e85633217
+
+COCOAPODS: 1.8.4

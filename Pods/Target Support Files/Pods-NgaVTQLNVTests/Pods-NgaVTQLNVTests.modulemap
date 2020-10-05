@@ -1,0 +1,6 @@
+framework module Pods_NgaVTQLNVTests {
+  umbrella header "Pods-NgaVTQLNVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
