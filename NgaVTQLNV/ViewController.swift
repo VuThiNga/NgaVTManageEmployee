@@ -59,20 +59,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextVC = segue.destination as? StaffInfoDetailVC, let data = sender as? EmployeeBO {
-            nextVC.lstEmployee = lstEmployee
-            if lstEmployee.count > 0 {
-                for index in 0..<lstEmployee.count {
-                    if data.id == lstEmployee[index].id {
-                        nextVC.position = index
-                        break
-                    }
-                }
-            }
+            nextVC.employee = data
             nextVC.delegate = self
         }
     }
     
-    func completeEditEmployee(lstEmployee: [EmployeeBO]) {
+    func completeEditEmployee() {
         DispatchQueue.main.async{
             self.tbvStaff.reloadData()
         }

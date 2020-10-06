@@ -9,7 +9,7 @@
 import UIKit
 
 protocol EditEmployeeDelegate {
-    func completeEditEmployee(lstEmployee: [EmployeeBO])
+    func completeEditEmployee()
 }
 
 class StaffInfoDetailVC: UIViewController {
@@ -18,8 +18,6 @@ class StaffInfoDetailVC: UIViewController {
     @IBOutlet weak var lbStaffAddress: UITextField!
     @IBOutlet weak var switchGender: UISwitch!
     
-    var lstEmployee = [EmployeeBO]()
-    var position: Int = -1
     var delegate: EditEmployeeDelegate?
     var employee: EmployeeBO?
     
@@ -31,15 +29,15 @@ class StaffInfoDetailVC: UIViewController {
     }
     
     func initView(){
-        if lstEmployee.count > 0 && position >= 0 {
-            employee = lstEmployee[position]
-            lbStaffName.text = employee?.name ?? ""
-            lbStaffAddress.text = employee?.address ?? ""
-            if let isMale = employee?.isMale, isMale {
+        if let employee = employee {
+            lbStaffName.text = employee.name ?? ""
+            lbStaffAddress.text = employee.address ?? ""
+            if let isMale = employee.isMale, isMale {
                 switchGender.isOn = true
             }else{
                 switchGender.isOn = false
             }
+            
         }
     }
     
@@ -47,7 +45,7 @@ class StaffInfoDetailVC: UIViewController {
         employee?.name = lbStaffName.text
         employee?.address = lbStaffAddress.text
         employee?.isMale = switchGender.isOn
-        delegate?.completeEditEmployee(lstEmployee: lstEmployee)
+        delegate?.completeEditEmployee()
         if self.navigationController?.topViewController == self {
             self.navigationController?.popViewController(animated: true)
         }else{
